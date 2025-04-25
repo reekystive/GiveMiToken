@@ -1,8 +1,18 @@
 words:
   - avenir
+  - cdylib
   - clsx
+  - givemitoken
   - grayscale
+  - icns
+  - njsproj
+  - ntvs
   - reekystive
+  - rgba
+  - rlib
+  - serde
+  - staticlib
+  - tauri
   - Vite
   - WCAG
 flagWords:
@@ -12,3 +22,4 @@ suggestWords:
   - colour -> color
 ignorePaths:
   - cspell.config.yaml
+  - Cargo.lock
