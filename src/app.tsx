@@ -1,9 +1,9 @@
 import { invoke } from '@tauri-apps/api/core';
-import { useState } from 'react';
-import './App.css';
+import { FC, useState } from 'react';
+import './app.css';
 import reactLogo from './assets/react.svg';
 
-function App() {
+export const App: FC = () => {
   const [greetMsg, setGreetMsg] = useState('');
   const [name, setName] = useState('');
 
@@ -42,6 +42,4 @@ function App() {
       <p>{greetMsg}</p>
     </main>
   );
-}
-
-export default App;
+};
