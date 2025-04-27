@@ -3,9 +3,12 @@ words:
   - cdylib
   - clsx
   - codegen
+  - evenodd
+  - fluentui
   - givemitoken
   - grayscale
   - icns
+  - Iconify
   - Mingxuan
   - njsproj
   - ntvs
@@ -17,6 +20,7 @@ words:
   - tauri
   - Vite
   - WCAG
+  - xlink
 flagWords:
   - blacklist -> blocklist
   - whitelist -> allowlist
