@@ -1,6 +1,6 @@
 [package]
-authors = ["you"]
-description = "A Tauri App"
+authors = ["Mingxuan Wang"]
+description = "GiveMiToken Tauri App"
 edition = "2021"
 name = "givemitoken"
 version = "0.1.0"
