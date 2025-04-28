@@ -53,7 +53,7 @@ export const create2FaWindow = ({
       resolve(child);
     });
 
-    void child.once('tauri://close-requested', () => {
+    void child.once('tauri://destroyed', () => {
       onClose?.();
       if (interval) {
         window.clearInterval(interval);
