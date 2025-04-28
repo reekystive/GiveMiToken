@@ -1,13 +1,13 @@
+import { greet } from '@/ipc/commands';
 import { Button, Field, Input, Text, Title2 } from '@fluentui/react-components';
-import { invoke } from '@tauri-apps/api/core';
 import { FC, useState } from 'react';
 
 export const GreetingTab: FC = () => {
   const [greetMsg, setGreetMsg] = useState('');
   const [name, setName] = useState('');
 
-  async function greet() {
-    setGreetMsg(await invoke('greet', { name }));
+  async function handleGreet() {
+    setGreetMsg(await greet({ name }));
   }
 
   return (
@@ -18,7 +18,7 @@ export const GreetingTab: FC = () => {
         className="flex flex-col gap-3"
         onSubmit={(e) => {
           e.preventDefault();
-          void greet();
+          void handleGreet();
         }}
       >
         <Field label="Enter a name">

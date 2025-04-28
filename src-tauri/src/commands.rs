@@ -7,11 +7,6 @@ pub fn greet(name: &str) -> String {
 }
 
 #[tauri::command]
-pub fn my_custom_command() {
-    println!("I was invoked from JavaScript!");
-}
-
-#[tauri::command]
 pub fn eval_js(app: AppHandle, win_label: &str, code: &str) {
     let webview = app.get_webview_window(win_label);
     if let Some(webview) = webview {

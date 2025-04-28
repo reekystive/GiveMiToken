@@ -11,3 +11,9 @@ export const evalJs = (params: EvalJsParams) => {
     ...params,
   });
 };
+
+export const greet = async (params: { name: string }): Promise<string> => {
+  return await invoke('greet', {
+    ...params,
+  });
+};
