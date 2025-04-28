@@ -1,25 +1,39 @@
 words:
+  - appkit
   - avenir
   - cdylib
+  - Ciphertext
+  - ciphertexts
   - clsx
   - codegen
+  - Decryptor
+  - Encryptor
   - evenodd
   - fluentui
   - givemitoken
   - grayscale
   - icns
   - Iconify
+  - jsencrypt
+  - m
+  - Mijia
   - Mingxuan
+  - MIOT
   - njsproj
   - ntvs
+  - PRGA
   - reekystive
   - rgba
   - rlib
   - serde
+  - ssecurity
   - staticlib
   - tauri
+  - Titlebar
+  - unlisten
   - Vite
   - WCAG
+  - xiaomiio
   - xlink
 flagWords:
   - blacklist -> blocklist

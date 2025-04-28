@@ -5,6 +5,20 @@
   "windows": ["main"],
   "permissions": [
     "core:default",
-    "opener:default"
+    "opener:default",
+    "http:default",
+    "core:window:allow-minimize",
+    "core:window:allow-start-dragging",
+    "core:window:allow-close",
+    "core:webview:allow-create-webview",
+    "core:webview:allow-create-webview-window",
+    {
+      "identifier": "http:default",
+      "allow": [
+        { "url": "https://account.xiaomi.com" },
+        { "url": "https://sts.api.mijia.tech" },
+        { "url": "https://api.mijia.tech" }
+      ]
+    }
   ]
 }

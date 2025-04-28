@@ -13,13 +13,17 @@
     "windows": [
       {
         "title": "GiveMiToken",
+        "titleBarStyle": "Visible",
         "width": 800,
-        "height": 600
+        "height": 600,
+        "minWidth": 400,
+        "minHeight": 300
       }
     ],
     "security": {
       "csp": null
-    }
+    },
+    "withGlobalTauri": true
   },
   "bundle": {
     "active": true,

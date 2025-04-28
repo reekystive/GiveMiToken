@@ -1,0 +1,23 @@
+// THIS FILE IS IMPORTED AS A STRING
+// SO YOU CAN'T USE IMPORT/EXPORT IN THIS FILE
+
+void (async () => {
+  const TARGET_URL = 'https://sts.api.io.mi.com/sts';
+
+  /** @type {typeof import('@tauri-apps/api/webviewWindow').WebviewWindow} */
+  // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+  const WebviewWindow =
+    // @ts-expect-error global tauri is not typed
+    // eslint-disable-next-line @typescript-eslint/no-unsafe-member-access
+    window.__TAURI__.webviewWindow.WebviewWindow;
+
+  const mainWindow = await WebviewWindow.getByLabel('main');
+
+  if (!window.location.href.startsWith(TARGET_URL)) {
+    console.log('waiting-for-login', { currentUrl: window.location.href });
+    await mainWindow?.emit('waiting-for-login', { currentUrl: window.location.href });
+  } else {
+    console.log('got-cookie', { cookie: document.cookie });
+    await mainWindow?.emit('got-cookie', { cookie: document.cookie });
+  }
+})();

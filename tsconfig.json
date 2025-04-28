@@ -22,6 +22,8 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedIndexedAccess": true,
     "useUnknownInCatchVariables": true,
+    "allowJs": true,
+    "checkJs": true,
 
     "paths": {
       "@/*": ["./src/*"],
